@@ -2,103 +2,118 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>trab_1.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abarrotes JLM</title>
 </head>
-<body>
+<body id="top">
 
-<h1>pongame 10</h1>
-<p>integrantes del quipirijillo: Alcantar Leonardo,Montes Marcos y De la rosa Julio</p>
+<h1>Abarrotes JLM</h1>
+<p>La tienda mas confiable y barata que hay.</p>
 
+<h2>Quiénes somos</h2>
+<h3>Alcantar Leonardo, Montes Marcos y De la rosa julio</h3>
+<p>nueva tienda de abarrotes emergente, no solo eres un cliente eres nuestra familia.</p>
+<h3>Horario</h3>
+<p>Abrimos de lunes a sábado de 7:00 a.m. a 11:00 p.m.<br>Domingos de 8:00 a.m. a 4:00 p.m.</p>
 
-<h2>Encabezados y párrafos</h2>
-<h3>letra tamaño h3</h3>
-<h4>letas tamaño h4</h4>
-<h5>lentejas  tamaño h5</h5>
-<h6>lentes tamaño h6</h6>
-<p>Esto es un párrafo.</p>
-<p>Esto es otro párrafo pero con un salto de línea<br>aquí abajo.</p>
-
-
-<h2>Listas</h2>
+<h2>¿que vendemos?</h2>
 <ul>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
+    <li>Frutas y verduras</li>
+    <li>Pan y tortillas</li>
+    <li>Lácteos y huevo</li>
+    <li>Abarrotes y botanas</li>
+    <li>Refrescos y bebidas</li>
+    <li>Artículos de limpieza</li>
+    <li>Felicidad y Cariño</li>
 </ul>
+
+<h2>Cómo comprar en la tienda</h2>
 <ol>
-    <li>Primero</li>
-    <li>Segundo</li>
-    <li>Tercero</li>
+    <li>Entra y toma lo que necesitas.</li>
+    <li>Pasa a la caja y dinos qué llevas.</li>
+    <li>Paga en efectivo.</li>
+    <li>Recibe tu ticket y tus productos.</li>
 </ol>
 
+<h2>Nuestro local</h2>
+<img src="tienda_foto.webp" alt="Fachada de la tienda" width="600">
+<p>Así se ve nuestro establecimiento. Te esperamos.</p>
 
-<h2>Hipervínculos</h2>
-<a href="https://youtu.be/dQw4w9WgXcQ?si=CBxJMRt7ktKF60ub" target="_blank">reclama un iphone gratis haz click aqui</a>
-
-<!-- 1.3.6 Imágenes -->
-<h2>Imágenes</h2>
-<img src="news%20of%20the%20world.webp" alt="Queen - News_of_the_World" width="300">
-
-
-<h2>Tablas</h2>
+<h2>Precios del día</h2>
 <table border="1">
     <tr>
-        <th>Nombre</th>
-        <th>Apellido</th>
+        <th>Producto</th>
+        <th>Peso</th>
+        <th>Precio</th>
     </tr>
     <tr>
-        <td>Leonardo</td>
-        <td>Alcantar</td>
+        <td>Leche</td>
+        <td>1 litro</td>
+        <td>$26</td>
     </tr>
     <tr>
-        <td>Marcos</td>
-        <td>Montes</td>
+        <td>Huevo</td>
+        <td>Kilo</td>
+        <td>$38</td>
     </tr>
     <tr>
-        <td>Julio</td>
-        <td>De la rosa</td>
+        <td>Tortillas</td>
+        <td>Kilo</td>
+        <td>$24</td>
+    </tr>
+    <tr>
+        <td>Frijol</td>
+        <td>Kilo</td>
+        <td>$32</td>
+    </tr>
+    <tr>
+        <td>coca cola</td>
+        <td>600 ml</td>
+        <td>$22</td>
     </tr>
 </table>
 
-
-<h2>Formularios</h2>
+<h2>Haz tu pedido</h2>
 <form action="#" method="post">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre">
     <br><br>
-    <label for="correo">Correo:</label>
-    <input type="email" id="correo" name="correo">
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
     <br><br>
-    <label for="clave">Contraseña:</label>
-    <input type="password" id="clave" name="clave">
-    <br><br>
-    <input type="radio" id="h" name="sexo" value="h"> <label for="h">Hombre</label>
-    <input type="radio" id="m" name="sexo" value="m"> <label for="m">Mujer</label>
-    <br><br>
-    <input type="checkbox" id="acepto" name="acepto"> <label for="acepto">Acepto los términos</label>
-    <br><br>
-    <label for="pais">País:</label>
-    <select id="pais" name="pais">
-        <option value="mx">México</option>
-        <option value="es">España</option>
-        <option value="ar">Argentina</option>
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto">
+        <option value="leche">Leche</option>
+        <option value="huevo">Huevo</option>
+        <option value="tortillas">Tortillas</option>
+        <option value="frijol">Frijol</option>
+        <option value="refresco">Refresco</option>
     </select>
     <br><br>
-    <textarea name="mensaje" rows="4" cols="30" placeholder="Escribe un mensaje"></textarea>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" value="1">
     <br><br>
-    <button type="submit">Enviar</button>
+    <input type="radio" id="recoger" name="entrega" value="recoger"> <label for="recoger">Paso a recogerlo</label>
+    <input type="radio" id="domicilio" name="entrega" value="domicilio"> <label for="domicilio">Envío a domicilio</label>
+    <br><br>
+    <input type="checkbox" id="aviso" name="aviso"> <label for="aviso">Avísenme de las ofertas</label>
+    <br><br>
+    <textarea name="comentarios" rows="4" cols="30" placeholder="Comentarios o indicaciones"></textarea>
+    <br><br>
+    <button type="submit">Enviar pedido</button>
 </form>
 
-
-<h2>Elementos multimedia</h2>
-<h3>Audio</h3>
+<h2>Multimedia</h2>
+<h3>Música de la tienda</h3>
 <audio controls>
-    <source src="ayayayayyyyy.mp3" type="audio/mpeg">
+    <source src="Shop.mp3" type="audio/mpeg">
 </audio>
-<h3>Video</h3>
-<video width="320" controls>
-    <source src="nyan_cat.mp4" type="video/mp4">
-</video>
+
+<h2>Contacto</h2>
+<p>Av. Aquiles Serdán 964, Tabachines, 81257 Los Mochis, Sin.</p>
+<p>Contactanos a este numero de Whatsapp 6682749148.</p>
+<a href="https://maps.app.goo.gl/t3vtNkQmjoy7LFuv7" target="_blank">Ver en el mapa</a> |
+<a href="#top">Volver arriba</a>
 
 </body>
 </html>
